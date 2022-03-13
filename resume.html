@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8" />
+    <title>Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="resume.css" />
+    <link rel="stylesheet" type="text/css" href="Chart.css">
+    <script src="Chart.js"></script>
+
+
+
+</head>
+
+<body>
+    <div id="resume">
+        <!-- 上半部版面   -->
+        <div id="pink">
+            <div id="photo">
+
+                <div id="inner_photo">
+                    <img id="myPhoto" src="resume_sticker.JPG" alt="myPhoto">
+                </div>
+
+            </div>
+            <div id="dialog">
+                <p>鮪魚，大家都這麼稱呼我。<br />求學階段就是攻讀設計，包含平面與多媒體設計。<br />第一份工作是美編，使我更專精於平面軟體的應用。<br />第二份工作則是業務助理兼美編，除了設計專業以外，並協助業務與客戶之間的協調關係。<br />在規劃公司網頁的過程中，進而對網頁設計產生興趣，因此自主進修。</p>
+                <div id="triangle_1"></div>
+                <div id="triangle_2"></div>
+            </div>
+        </div>
+        <!-- 下半部版面   -->
+        <div id="blank">
+            <!-- 下半部上版面   -->
+            <div id="name_contact">
+                <span id="name">華偉芸</span>
+            </div>
+            <div id="contact_item">
+                <div id="one">
+                    <img src="resume_mailbox.svg" alt="email">
+                    <p class="contact">leejunkilowinnive@gmail.com</p>
+                </div>
+                <div id="two">
+                    <img src="resume_phone.svg" alt="phone">
+                    <p class="contact">0983-263-229</p>
+                </div>
+            </div>
+
+            <!-- 下半部下版面   -->
+            <div id="sideLeft">
+                <h4>&nbsp; 技能 &nbsp;</h4>
+                <div id="level_name"><span>初階 中階 熟練 精通</span></div>
+                <div id="skills" class="flex-container">
+                    <div class="title">Photoshop</div>
+                    <div class="level">
+                        <div id="a1" class="bar_graph" style="width: 200px;"></div>
+                    </div>
+
+                    <div class="title">Illustrator</div>
+                    <div class="level">
+                        <div id="a2" class="bar_graph" style="width: 170px;"></div>
+                    </div>
+
+                    <div class="title">Indesign</div>
+                    <div class="level">
+                        <div id="a3" class="bar_graph" style="width: 110px;"></div>
+                    </div>
+
+                    <div class="title">HTML5</div>
+                    <div class="level">
+                        <div id="a4" class="bar_graph" style="width: 130px;"></div>
+                    </div>
+
+                    <div class="title">CSS3</div>
+                    <div class="level">
+                        <div id="a5" class="bar_graph" style="width: 130px;"></div>
+                    </div>
+
+                    <div class="title">JavaScript </div>
+                    <div class="level">
+                        <div id="a6" class="bar_graph" style="width: 70px;"></div>
+                    </div>
+
+                    <div class="title">Jquery</div>
+                    <div class="level">
+                        <div id="a7" class="bar_graph" style="width: 70px;"></div>
+                    </div>
+                </div>
+
+                <h4>&nbsp; 性向圖 &nbsp;</h4>
+                <div id="personality">
+                    <div style="height: 200px; margin: 10px;">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sideRight">
+                <h4>&nbsp; 學習經歷 &nbsp;</h4>
+                <div id="experience">
+                    <div class="flex-container_1">
+                        <div id="box1">
+                            <div id="school" class="pTitle">2008.8<br />復興商工<br />廣告設計科就讀</div>
+                            <div id="school_1" class="pTitle">2011.6<br />復興商工<br />廣告設計科畢</div>
+                            <div id="job" class="pTitle">2015.7-2017.7<br />采億實業有限公司<br />美編人員</div>
+                        </div>
+                        <div id="box2"></div>
+                        <div id="box3">
+                            <div id="award" class="pTitle_1" style="font-size: 12px;">2009 丙級技術師證照<br />2010 金融宣導繪本競賽佳作<br />2010 阿凡達動畫研習證書<br />2010 資訊月海報設計競賽入選<br />2010 師生美展企業識別入選<br />2010 師生美展包裝設計入選<br />2010 師生美展數位攝影入選<br />2011 復興商工元旦展佳作
+                            </div>
+                            <div id="school_2" class="pTitle_1">2011.9<br />台北城市科技大學<br />數位多媒體設計系就讀</div>
+                            <div id="award_1" class="pTitle_1" style="font-size: 12px;">2011 MATCC認證<br />2011 行車紀錄器LOGO商用<br />2012 PHOTOSHOP 認證<br />
+                                2013 FLASH認證<br />2014 MAYA認證
+                            </div>
+                            <div id="school_3" class="pTitle_1">2015.6<br />台北城市科技大學<br />數位多媒體設計系畢</div>
+                            <div id="job_1" class="pTitle_1">2017.10-2019.8<br />長勱有限公司<br />業務助理兼美編人員</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="clear: both;"></div>
+    <script src="myChart.js"></script>
+
+</body>
+</html>

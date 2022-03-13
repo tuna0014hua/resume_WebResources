@@ -1,0 +1,534 @@
+* {
+    font-family: "微軟正黑體";
+    font-weight: 550;
+}
+
+body {
+    background-color: darkgray;
+    
+}
+
+
+/*上版面文字*/
+p {
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: -10px;
+    margin: 12px;
+    font-weight: 550;
+    color: #ffffff;
+}
+
+/*下版面上半部文字*/
+
+img {
+    width: 45px;
+    vertical-align: middle;
+}
+
+h4 {
+    display: flex;
+    flex-direction: row;
+    font-size: 32px;
+    letter-spacing: 15px;
+    margin: 0px;
+    color: #9A7F87;
+}
+
+h4:before,
+h4:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 4px solid #595757;
+    margin: auto;
+}
+
+#resume {
+    width: 730px;
+    height: 1100px;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+}
+
+/*版面上半部*/
+#pink {
+    width: 100%;
+    height: 25%;
+    background-color: #F5B9B2;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#photo {
+    padding: auto;
+    width: 250px;
+    height: 250px;
+    border: solid 2px #9A7F87;
+    border-radius: 100%;
+    position: relative;
+    top: 30%;
+    left: 3%;
+    float: left;
+}
+
+#inner_photo {
+    width: 230px;
+    height: 230px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: dashed 2px #9A7F87;
+    border-radius: 100%;
+    background: #ffffff;
+    overflow: hidden;
+}
+#myPhoto{
+    width: 200px;
+    position: absolute;
+    left: 15px;
+}
+
+/*對話框*/
+#dialog {
+    width: 380px;
+    height: 170px;
+    border-radius: 10px;
+    border: solid 2px #9A7F87;
+    background: #F5B9B2;
+    float: left;
+    position: relative;
+    top: 10%;
+    left: 6%;
+}
+
+#triangle_1 {
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 40px 40px 0 0;
+    border-color: #9A7F87 transparent transparent transparent;
+    transform: skew(-15deg);
+    position: absolute;
+    left: 5%;
+    top: 100%
+}
+
+#triangle_2 {
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 35px 35px 0 0;
+    border-color: #F5B9B2 transparent transparent transparent;
+    transform: skew(-15deg);
+    position: absolute;
+    left: 5.9%;
+    top: 99%;
+}
+
+
+/*下版面滿版*/
+#blank {
+    text-align: center;
+    width: 100%;
+    height: 75%;
+    float: left;
+    background-color: #fafbf0;
+    border-radius: 0px 0px 10px 10px;
+}
+
+/*下版面上半部*/
+#name_contact {
+    width: 40%;
+    height: 20%;
+    background-color: #fafbf0;
+    display: inline-block;
+}
+
+#name {
+    font-size: 60px;
+    font-weight: 550;
+    letter-spacing: 25px;
+    color: #595757;
+    position: relative;
+    top: 43%;
+    left: 10%;
+}
+
+#contact_item {
+    width: 60%;
+    height: 20%;
+    background-color: #fafbf0;
+    float: right;
+
+}
+
+.contact {
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+    color: #9A7F87;
+    display: inline-block;
+}
+
+#one {
+    /*    display: inline-block;*/
+    position: relative;
+    top: 15%;
+    left: 8%;
+}
+
+#two {
+    /*    display: inline-block;*/
+    position: relative;
+    top: 25%;
+    left: -8%;
+}
+
+/*下版面下半部*/
+#white_down {
+    background-color: antiquewhite;
+    width: auto;
+    height: 80%;
+}
+
+/*左半部*/
+#sideLeft {
+    /*    background-color: brown;*/
+    width: 50%;
+    height: 80%;
+    float: left;
+}
+
+/*技能*/
+#skills {
+    /*    background-color: blue;*/
+    width: 100%;
+    height: 50%;
+}
+
+#level_name {
+    word-spacing: 25px;
+    float: right;
+    margin-right: 10px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    top: 10px;
+}
+
+.title {
+    width: 25%;
+    height: 5%;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.level {
+    width: 65%;
+    height: 5%;
+    border-style: solid;
+    border-radius: 8px;
+    border-color: #595757;
+}
+
+.bar_graph {
+    background-color: #F5B9B2;
+    border-radius: 5px;
+    height: 14.5px;
+    margin: 1px 0px 1px 3px;
+}
+
+/*長條動畫*/
+#a1 {
+    animation: a1 1s 1;
+    animation-timing-function: linear;
+}
+
+@keyframes a1 {
+    0% {
+        width: 0px;
+    }
+
+    50% {
+        width: 75px;
+    }
+
+    100% {
+        width: 200px;
+    }
+}
+
+#a2 {
+    animation: a2 1s 1;
+    animation-timing-function: linear;
+}
+
+@keyframes a2 {
+    0% {
+        width: 0px;
+    }
+
+    50% {
+        width: 75px;
+    }
+
+    100% {
+        width: 170px;
+    }
+}
+
+#a3 {
+    animation: a3 1s 1;
+    animation-timing-function: linear;
+}
+
+@keyframes a3 {
+    0% {
+        width: 0px;
+    }
+
+    50% {
+        width: 75px;
+    }
+
+    100% {
+        width: 110px;
+    }
+}
+
+#a4 {
+    animation: a4 1s 1;
+    animation-timing-function: linear;
+}
+
+@keyframes a4 {
+    0% {
+        width: 0px;
+    }
+
+    50% {
+        width: 75px;
+    }
+
+    100% {
+        width: 130px;
+    }
+}
+
+#a5 {
+    animation: a5 1s 1;
+    animation-timing-function: linear;
+}
+
+@keyframes a5 {
+    0% {
+        width: 0px;
+    }
+
+    50% {
+        width: 75px;
+    }
+
+    100% {
+        width: 130px;
+    }
+}
+
+#a6 {
+    animation: a6 1s 1;
+    animation-timing-function: linear;
+}
+
+@keyframes a6 {
+    0% {
+        width: 0px;
+    }
+
+    25% {
+        width: 25px;
+    }
+
+    75% {
+        width: 50px;
+    }
+
+    100% {
+        width: 70px;
+    }
+}
+
+#a7 {
+    animation: a7 1s 1;
+    animation-timing-function: linear;
+}
+
+@keyframes a7 {
+    0% {
+        width: 0px;
+    }
+
+    25% {
+        width: 25px;
+    }
+
+    75% {
+        width: 50px;
+    }
+
+    100% {
+        width: 70px;
+    }
+}
+
+
+#personality {
+    /*    background-color: palevioletred;*/
+    width: 100%;
+    height: 223.6px;
+}
+
+
+/*右半部*/
+#sideRight {
+    /*    background-color: red;*/
+    width: 50%;
+    height: 80%;
+    float: left;
+}
+
+#experience {
+    /*    background-color: palegreen;*/
+    border-left: dashed;
+    width: 100%;
+    height: 93%;
+}
+.flex-container_1{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+#box1{
+    width: 150px;
+    height: 613px;
+    position: relative;
+}
+#box2{
+    margin-top: 20px;
+    width: 15px;
+    height: 580px;
+    background-color: #F5B9B2;
+    border-radius: 200px;
+    animation: timeLine 3s 1 ease-out;
+}
+@keyframes timeLine{
+    0%      {height: 0px;}
+    100%    {height: 580px;}
+}
+#box3{
+    width: 195px;
+    height: 613px;
+    position: relative;
+}
+/*右半左*/
+.pTitle{
+    font-size: 14px;
+    text-align: right;
+    color: #9A7F87;
+    margin-right: 20px;
+}
+#school{
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    animation: schoolAni 3s 1;
+}
+@keyframes schoolAni{
+    0% {opacity: 0;}
+    12.5% {opacity: 1;}
+}
+
+#school_1{
+    position: absolute;
+    top: 180px;
+    left: 30px;
+    animation: school_1Ani 3s 1;
+}
+@keyframes school_1Ani{
+    25% {opacity: 0;}
+    37.5% {opacity: 1;}
+}
+
+#job{
+    position: absolute;
+    top: 400px;
+    left: 10px;
+    animation: jobAni 3s 1;
+}
+@keyframes jobAni{
+    75% {opacity: 0;}
+    87.5% {opacity: 1;}
+}
+
+/*右半右*/
+.pTitle_1{
+    font-size: 14px;
+    text-align: left;
+    color: #9A7F87;
+    margin-left: 20px;
+}
+#award{
+    position: absolute;
+    top: 50px;
+/*    left: 10px;*/
+    animation: awardAni 3s 1;
+}
+@keyframes awardAni{
+    12.5% {opacity: 0;}
+    25% {opacity: 1;}
+}
+
+#school_2{
+    position: absolute;
+    top: 200px;
+    animation: school_2Ani 3s 1;
+}
+@keyframes school_2Ani{
+    37.5% {opacity: 0;}
+    50% {opacity: 1;}
+}
+
+#award_1{
+    position: absolute;
+    top: 270px;
+    animation: award_1Ani 3s 1;
+}
+@keyframes award_1Ani{
+    50% {opacity: 0;}
+    62.5% {opacity: 1;}
+}
+
+#school_3{
+    position: absolute;
+    top: 370px;
+    animation: school_3Ani 3s 1;
+}
+@keyframes school_3Ani{
+    62.5% {opacity: 0;}
+    75% {opacity: 1;}
+}
+
+#job_1{
+    position: absolute;
+    top: 500px;
+    animation: job_1Ani 3s 1;
+}
+@keyframes job_1Ani{
+    87.5% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
